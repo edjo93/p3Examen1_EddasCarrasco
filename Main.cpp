@@ -134,7 +134,7 @@ int main(){
 	
 	char opcion;
 	do{
-		cout<<"\n1-imprimir soldados\n2-iniciar la simulacion\ns-salir\n?:";
+		cout<<"\n1-imprimir soldados\n2-iniciar la simulacion(falto validacion para borrar los soldados)\ns-salir\n?:";
 		cin>>opcion;
 		switch(opcion){
 			case'1':
@@ -145,7 +145,8 @@ int main(){
 					cout<<endl;
 					
 				}
-				cout<<"batallon2"<<endl<<endl;
+				cout<<"batallon2"<<endl<<endl
+				;
 				for(int i=0;i<batallon2.size();i++){
 					
 					cout<<batallon2.at(i)->getNombre();
@@ -206,6 +207,7 @@ int main(){
 								batallon1[jugador1]->defenderSoldadoSoporte(batallon2[jugador2]->atacarSoldadoSoporte());
 							}
 						}
+						
 						
 					}while(batallon1.size()>0&&batallon2.size()>0);
 					
