@@ -139,6 +139,18 @@ int main(){
 		switch(opcion){
 			case'1':
 				//print
+				cout<<"batallon1"<<endl<<endl;;
+				for(int i=0;i<batallon1.size();i++){
+					cout<<batallon1.at(i)->getNombre();
+					cout<<endl;
+					
+				}
+				cout<<"batallon2"<<endl<<endl;
+				for(int i=0;i<batallon2.size();i++){
+					
+					cout<<batallon2.at(i)->getNombre();
+					cout<<endl;
+				}
 				
 				break;
 			case'2':
